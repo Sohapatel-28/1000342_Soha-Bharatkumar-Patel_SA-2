@@ -291,3 +291,5 @@ Any insights generated from the dashboard should be interpreted carefully and wi
 
 **Turning hospital discharge data into meaningful and interactive insights through data analysis and visualisation.**
 
+STREAMLIT: https://1000342soha-bharatkumar-patelsa-2-exxhbrt8prtxrtgmqnmvgd.streamlit.app/
+EDA: https://colab.research.google.com/drive/1dkAE6j-DJkoZ0KPLRnvnSbywYANwofqT?usp=sharing
