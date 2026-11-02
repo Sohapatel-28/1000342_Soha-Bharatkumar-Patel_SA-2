@@ -117,7 +117,7 @@ st.markdown(
 )
 
 # ---------- Data loading ----------
-DATA_PATH = Path(__file__).parent / "hospital_cleaned.csv"
+DATA_PATH = Path(__file__).parent / "hospital_sample.csv"
 
 @st.cache_resource(show_spinner="Loading the dashboard columns efficiently…")
 def load_data(path: str, modified_time: float):
@@ -176,11 +176,11 @@ def load_data(path: str, modified_time: float):
 if not DATA_PATH.exists():
     st.error("The cleaned dataset file is missing.")
     st.write(f"Expected location: `{DATA_PATH}`")
-    st.info("Place `hospital_cleaned.csv` in the same folder as `app.py`.")
+    st.info("Place `hospital_sample.csv` in the same folder as `app.py`.")
     st.stop()
 
 if DATA_PATH.stat().st_size == 0:
-    st.error("`hospital_cleaned.csv` is empty.")
+    st.error("`hospital_sample.csv` is empty.")
     st.stop()
 
 try:
